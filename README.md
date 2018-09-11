@@ -9,15 +9,33 @@
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. go get gitee.com/goshark/gtimers
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+
+```
+package main
+
+import (
+	"fmt"
+
+	"gitee.com/goshark/gtimers/gtimers"
+)
+
+func main() {
+	timer := gtimers.NewTimer()
+	timer.SetInterval("1m")
+	timer.SetRepeatcount(3)
+
+	timer.SyncStart(func() {
+		//doing sth at this time..
+		fmt.Println("doing something for current function..")
+	})
+}
+
+```
+
 
 #### 参与贡献
 
