@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"gitee.com/goshark/timer/gtimers"
+	"gitee.com/goshark/gtimers"
 )
 
 func main() {
